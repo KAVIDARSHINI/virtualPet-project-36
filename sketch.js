@@ -86,6 +86,11 @@ function feedDog(){
   } else{
     foodObj.updateFoodStock(food_stock_val -1);
   }
+  database.ref('/').update({
+     'FeedTime' : hour(),
+     'Food' : foodObj.getFoodStock()
+   })
+
 
 }
 
