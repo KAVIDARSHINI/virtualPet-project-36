@@ -58,11 +58,11 @@ function draw() {
   textFont("Cooper Black");
   textSize(20);
   if(lastFed >= 12){
-    text("Last Fed  :  " + lastFed % 12 + "PM",270,30);
+    text("Last Fed  :  " + lastFed % 12 + "  PM",270,30);
   }else if(lastFed == 0){
-    text("Last  Fed  :   12 AM",270,30);
+    text("Last  Fed  :   12  AM",270,30);
   }else{
-    text("Last Fed : " + lastFed + "AM",270,30);
+    text("Last Fed : " + lastFed + "  AM",270,30);
   }
  
   drawSprites();
